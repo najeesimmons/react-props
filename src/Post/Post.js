@@ -1,4 +1,10 @@
+import Comment from "../Comment/Comment.js";
+
 function Post(props) {
+  const comments = props.comments.map((comment, index) => (
+    <Comment message={comment} key={index} />
+  ));
+
   return (
     <>
       <h2>{props.title}</h2>
@@ -7,7 +13,7 @@ function Post(props) {
         <p>{props.body}</p>
       </div>
       <h3>Comments:</h3>
-      <p>{props.comments}</p>
+      {comments}
     </>
   );
 }
