@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; 
 import Hello from './App.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello />
+    {/* I'm passing in the data that I want my component to use.
+    I'm passing it in where the component is RENDERED. */}
+    <Hello name={"Najee"} />
   </React.StrictMode>
 );
 

@@ -2,11 +2,14 @@
 // babel to translate jsx and have access to React.createElement()
 import React from 'react'
 
-function Hello() {
+// The "PROPS" parameter that the Hello() function takes references
+// the data passed in at the components render point. More specifically, 
+// it is a property on the props object.
+function Hello(props) {
   // Every component has, at minimum, a return. It generates a Virtual 
   // DOM node that will be added to the actual DOM.
   return (
-    <h1>Hello World</h1>
+    <h1>Hello {props.name}</h1>
   );
 }
 
