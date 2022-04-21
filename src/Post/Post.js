@@ -4,7 +4,7 @@ function Post(props) {
   const comments = props.comments.map((comment, index) => (
     <Comment message={comment} key={index} />
   ));
-
+console.log({comments})
   return (
     <>
       <h2>{props.title}</h2>
