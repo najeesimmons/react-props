@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; 
+import ReactDOM from 'react-dom/client'; 
 import Hello from './App.js';
 
 
@@ -8,7 +8,7 @@ root.render(
   <React.StrictMode>
     {/* I'm passing in the data that I want my component to use.
     I'm passing it in where the component is RENDERED. */}
-    <Hello name={"Najee"} />
+    <Hello name={"Najee"} age={31} job={"software developer"} />
   </React.StrictMode>
 );
 
